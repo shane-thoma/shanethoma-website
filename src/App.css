@@ -1,0 +1,87 @@
+* {
+  background-color: ghostwhite;
+
+  /*hide scrollbar for IE, Edge, Firefox*/
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+:root {
+  --fun-color: rgb(75, 60, 239);
+}
+::-webkit-scrollbar {
+  /*hide scrollbar for Chrome, Safari, Opera*/
+  display: none;
+}
+img {
+  width: 20%;
+  height: auto;
+}
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
+img.top {
+  padding-top: 30px;
+}
+h1 {
+  text-align: center;
+  font-family: "Cormorant SC", serif;
+  font-weight: 1000;
+  font-size: 300%;
+}
+p {
+  padding-right: 20%;
+  padding-left: 20%;
+  padding-bottom: 1%;
+  text-align: center;
+  font-family: "Segoe UI", system-ui;
+}
+strong {
+  color: darkolivegreen;
+}
+a {
+  color: var(--fun-color);
+  text-decoration: none;
+}
+.navbar {
+  margin-bottom: 40px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+}
+.navbar .navlinks .socials li {
+  display: inline;
+  line-height: 60px;
+  font-size: 42px;
+  padding: 0 10px;
+}
+.navbar .navlinks li a {
+  color: #555;
+}
+.navbar li#email a:hover {
+  color: orange;
+}
+.navbar li#github a:hover {
+  color: #000000;
+}
+.navbar li#linkedin a:hover {
+  color: #0077B5;
+}
+.navbar li#instagram a:hover {
+  color: #e1306c;
+}
+.navbar .navlinks .moreinfo li {
+  display: inline;
+  line-height: 60px;
+  list-style-type: none;
+  float: right;
+  justify-content: flex-end;
+  font-size: 150%;
+  padding: 0 30px;
+}
+.navbar .navlinks .moreinfo li a.active {
+  color: var(--fun-color);
+}
+.navbar .navlinks .moreinfo a:hover {
+  color: var(--fun-color);
+}
