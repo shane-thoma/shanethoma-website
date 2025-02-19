@@ -7,6 +7,7 @@
 }
 :root {
   --fun-color: rgb(75, 60, 239);
+  --project-color: rgb(142, 68, 173);
 }
 ::-webkit-scrollbar {
   /*hide scrollbar for Chrome, Safari, Opera*/
@@ -25,11 +26,21 @@ img.center {
 img.top {
   padding-top: 30px;
 }
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
 h1 {
   text-align: center;
   font-family: "Cormorant SC", serif;
   font-weight: 1000;
   font-size: 300%;
+}
+h2 {
+  text-align: center;
+  font-family: "Cormorant SC", serif;
+  font-weight: 1000;
+  font-size: 200%;
 }
 p {
   padding-right: 20%;
@@ -44,6 +55,9 @@ strong {
 a {
   color: var(--fun-color);
   text-decoration: none;
+}
+a.project {
+  color: var(--project-color);
 }
 .navbar {
   margin-bottom: 40px;
@@ -66,9 +80,6 @@ a {
 }
 .navbar li#linkedin a:hover {
   color: #0077B5;
-}
-.navbar li#instagram a:hover {
-  color: #e1306c;
 }
 .navbar .navlinks .moreinfo li {
   display: inline;

@@ -1,6 +1,6 @@
 # ShaneThoma.com
 
-This project is meant to function as a small portfolio website that will gain more interactivity for showing off projects as I complete more of my upcoming projects. For now, it just has some simple information about me to check out!
+This project is meant to function as a small portfolio website that will gain more interactivity for showing off projects as I complete more of my upcoming projects.
 
 
 # main vs gh-pages
