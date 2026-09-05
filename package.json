@@ -42,5 +42,9 @@
   "devDependencies": {
     "gh-pages": "^6.1.1"
   },
-  "homepage": "https://www.shanethoma.com/"
+  "homepage": "https://www.shanethoma.com/",
+  "allowScripts": {
+    "core-js@3.38.1": true,
+    "core-js-pure@3.38.1": true
+  }
 }

@@ -32,22 +32,23 @@ img.top {
 }
 h1 {
   text-align: center;
-  font-family: "Cormorant SC", serif;
-  font-weight: 1000;
-  font-size: 300%;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  font-size: 260%;
 }
 h2 {
   text-align: center;
-  font-family: "Cormorant SC", serif;
-  font-weight: 1000;
-  font-size: 200%;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 600;
+  font-size: 160%;
 }
 p {
   padding-right: 20%;
   padding-left: 20%;
   padding-bottom: 1%;
   text-align: center;
-  font-family: "Segoe UI", system-ui;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  line-height: 1.6;
 }
 strong {
   color: darkolivegreen;
@@ -62,6 +63,18 @@ a.project {
 .navbar {
   margin-bottom: 40px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+}
+.navbar .navlinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin: 0;
+  list-style: none;
+}
+.navbar .navlinks .socials {
+  display: flex;
+  align-items: center;
 }
 .navbar .navlinks .socials li {
   display: inline;
@@ -81,14 +94,18 @@ a.project {
 .navbar li#linkedin a:hover {
   color: #0077B5;
 }
+.navbar .navlinks .moreinfo {
+  display: flex;
+  align-items: center;
+}
 .navbar .navlinks .moreinfo li {
   display: inline;
   line-height: 60px;
   list-style-type: none;
-  float: right;
-  justify-content: flex-end;
-  font-size: 150%;
-  padding: 0 30px;
+  font-size: 130%;
+  padding: 0 25px;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
 }
 .navbar .navlinks .moreinfo li a.active {
   color: var(--fun-color);
@@ -96,3 +113,73 @@ a.project {
 .navbar .navlinks .moreinfo a:hover {
   color: var(--fun-color);
 }
+
+.player-wrapper {
+  max-width: 640px;
+  margin: 20px auto;
+  padding: 0 5%;
+  display: flex;
+  justify-content: center;
+}
+.player-wrapper video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile & Tablet Responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 190%;
+  }
+  h2 {
+    font-size: 135%;
+  }
+
+  img {
+    width: 45%;
+    max-width: 200px;
+  }
+
+  p {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 3%;
+  }
+
+  .navbar {
+    margin-bottom: 25px;
+  }
+  .navbar .navlinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 10px;
+    gap: 10px;
+  }
+  .navbar .navlinks .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar .navlinks .socials li {
+    font-size: 30px;
+    line-height: 1;
+    padding: 0 12px;
+  }
+  .navbar .navlinks .moreinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .navbar .navlinks .moreinfo li {
+    float: none;
+    line-height: 1.4;
+    font-size: 105%;
+    padding: 4px 10px;
+  }
+}
+

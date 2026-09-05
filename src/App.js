@@ -27,9 +27,9 @@ function NavBar(){
           <li className="social linkedin" id="linkedin"><a href="https://www.linkedin.com/in/shanethoma/"><i className="fa fa-linkedin"></i></a></li>
         </span>
         <span className="moreinfo">
-          <li className="moreinfo projects"><NavLink to="/projects">Projects</NavLink></li>
-          <li className="moreinfo classes"><NavLink to="/classes">Classes</NavLink></li>
           <li className="moreinfo about"><NavLink to="/" end>About</NavLink></li>
+          <li className="moreinfo classes"><NavLink to="/classes">Classes</NavLink></li>
+          <li className="moreinfo projects"><NavLink to="/projects">Projects</NavLink></li>
         </span>
       </ul>
     </nav>
@@ -42,7 +42,7 @@ function About(){
       <img className="center top" src="/ShanePhoto.png" alt="Shane Thoma"></img>
       <h1><b>Shane Thoma</b></h1>
       <p>
-        Junior undergraduate student at <a href="https://wvu.edu">West Virginia University</a> pursuing a major 
+        Senior undergraduate student at <a href="https://wvu.edu">West Virginia University</a> pursuing a major 
         in <a href="http://catalog.wvu.edu/undergraduate/collegeofengineeringandmineralresources/lanedepartmentofcomputerscienceand/computer_science/">Computer Science</a> and 
         a minor in <a href="http://catalog.wvu.edu/undergraduate/minors/data_science/">Data Science</a>.
       </p>
@@ -51,9 +51,10 @@ function About(){
         organization dedicated to teaching students about everything related to artificial intelligence. 
       </p>
       <p>
-        Research Intern at the <a href="https://testing.westvirginiaisopen.com/">West Virginia High Technology Foundation</a>. 
-        My work primarily involves the creation of a foundational Model Context Protocol (MCP) server, enabling AI agents 
-        to access and retrieve data from the <a href="https://psl.noaa.gov/data/nnja_obs/">NOAA NASA Joint Archive</a>.
+        Research Intern at the West Virginia High Technology Foundation. 
+        My work primarily involves the creation of Model Context Protocol (MCP) servers and clients, enabling AI agents 
+        to access and retrieve data from the <a href="https://psl.noaa.gov/data/nnja_obs/">NOAA NASA Joint Archive</a> and
+        other weather/climate-related resources.
       </p>
     </>
   );
@@ -106,7 +107,9 @@ function Projects(){
         logged in user to save quotes and edit their profile.
       </p>
       <h2><a href="https://github.com/WVU-CS330-2024-08-Group09/PlaceFindr" className="project">PlaceFindr</a></h2>
-      <ReactPlayer className="center" url="/project_portfolio/placefindr_demo.mov" controls />
+      <div className="player-wrapper">
+        <ReactPlayer className="react-player" url="/project_portfolio/placefindr_demo.mov" width="100%" height="auto" controls />
+      </div>
       <p>
         In my Software Engineering class, I worked in a group to create PlaceFindr, a web-based  
         application that takes user input on living conditions and outputs hotspots of recommended locations 
